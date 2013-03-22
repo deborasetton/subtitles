@@ -1,0 +1,533 @@
+﻿1
+00:00:00,000 --> 00:00:02,740
+When you web app
+ is causing a scandal
+
+2
+00:00:02,740 --> 00:00:05,320
+Try the "Elements" in
+ the Sources panel
+
+3
+00:00:05,360 --> 00:00:08,080
+When you Javascript
+is making making a blunder
+
+4
+00:00:08,100 --> 00:00:10,740
+Use the console and
+JavaScript debugger
+
+5
+00:00:10,760 --> 00:00:13,300
+When a web page is
+a cause in bandwidth stress
+
+6
+00:00:13,340 --> 00:00:15,960
+The network panel
+shows you the request
+
+7
+00:00:16,000 --> 00:00:18,760
+So speed up your page
+with just a few rules
+
+8
+00:00:18,800 --> 00:00:20,160
+It's time to discover
+
+9
+00:00:20,220 --> 00:00:22,440
+DevTools
+
+10
+00:00:26,260 --> 00:00:28,260
+If you've been a developer
+for a while,
+
+11
+00:00:28,320 --> 00:00:30,200
+odds are you remember
+the battle days
+
+12
+00:00:30,240 --> 00:00:31,880
+of web development
+debugging.
+
+13
+00:00:32,140 --> 00:00:34,560
+If you get a JavaScript
+error in your web page,
+
+14
+00:00:34,640 --> 00:00:36,980
+well, maybe the browser
+gives you a line number,
+
+15
+00:00:37,080 --> 00:00:38,080
+maybe it doesn't
+
+16
+00:00:38,400 --> 00:00:40,360
+and maybe that
+line number brings
+
+17
+00:00:40,400 --> 00:00:42,360
+you to where the
+error actually happened.
+
+18
+00:00:42,800 --> 00:00:45,060
+Same thing goes for
+stylesheet debugging.
+
+19
+00:00:45,120 --> 00:00:46,480
+You have a CSS
+property and
+
+20
+00:00:46,520 --> 00:00:48,080
+why isn't it showing up
+on the page?!
+
+21
+00:00:48,160 --> 00:00:50,020
+Well, you go back to your file,
+
+22
+00:00:50,080 --> 00:00:51,480
+you update it, check the browser.
+
+23
+00:00:51,540 --> 00:00:53,440
+You're back to the file,
+update it, check your browser.
+
+24
+00:00:53,940 --> 00:00:56,400
+Luckily, these days we have
+Chrome Developer Tools.
+
+25
+00:00:56,800 --> 00:00:58,720
+Developer Tools allows
+you to do things like
+
+26
+00:00:58,780 --> 00:01:02,100
+live edit your HTML and
+CSS right there in the page.
+
+27
+00:01:02,420 --> 00:01:04,800
+It comes with a powerful
+JavaScript debugger,
+
+28
+00:01:04,860 --> 00:01:08,360
+and also a bunch of tools
+to optimize your website performance.
+
+29
+00:01:08,800 --> 00:01:10,180
+It makes programming
+for the web...
+
+30
+00:01:10,220 --> 00:01:11,100
+dare I say...
+
+31
+00:01:11,720 --> 00:01:12,280
+Easy.
+
+32
+00:01:14,420 --> 00:01:15,980
+I'm Greg Pollock,
+and in this course,
+
+33
+00:01:16,040 --> 00:01:17,840
+we're gonna be walking
+through all the major features
+
+34
+00:01:17,900 --> 00:01:19,360
+of Chrome Developer Tools.
+
+35
+00:01:19,940 --> 00:01:21,580
+Now, we're gonna start
+with some of the basics
+
+36
+00:01:21,620 --> 00:01:23,240
+which you already
+may be familiar with,
+
+37
+00:01:23,300 --> 00:01:25,520
+so feel free to skip
+ahead to the next couple
+
+38
+00:01:25,740 --> 00:01:26,420
+chapters
+
+39
+00:01:26,700 --> 00:01:28,200
+to get into the more
+advanced material.
+
+40
+00:01:28,520 --> 00:01:29,680
+Meanwhile, in Level 1,
+
+41
+00:01:29,740 --> 00:01:31,400
+we're gonna be jumping
+into the Elements panel.
+
+42
+00:01:33,960 --> 00:01:37,640
+Throughout the videos and the challenges,
+we're gonna be working with a scheduling app
+
+43
+00:01:37,680 --> 00:01:39,860
+which we've been working on -- 
+that you can see here.
+
+44
+00:01:39,920 --> 00:01:42,000
+We wanna make some
+changes to this application.
+
+45
+00:01:42,840 --> 00:01:44,680
+First thing we'll want to do
+is open Developer Tools.
+
+46
+00:01:45,080 --> 00:01:48,560
+To do that, we look for the icon
+on our browser with the 3 lines on it.
+
+47
+00:01:49,000 --> 00:01:50,780
+Then, find the "Tools" menu item,
+
+48
+00:01:51,200 --> 00:01:53,100
+then click on "Developer Tools".
+
+49
+00:01:53,620 --> 00:01:56,200
+If you're not already familiar
+with the keyboard shortcut
+
+50
+00:01:56,240 --> 00:02:00,040
+to call up Developer Tools and to close
+Developer Tools from within your browser,
+
+51
+00:02:00,400 --> 00:02:02,780
+take note of it here, listed
+next to the menu item.
+
+52
+00:02:03,080 --> 00:02:06,640
+It will be much more convenient to open it
+using that keyboard shortcut next time.
+
+53
+00:02:07,700 --> 00:02:10,980
+By default, DevTools will appear at the bottom
+part of your Chrome window.
+
+54
+00:02:11,040 --> 00:02:15,620
+You can close it anytime, either by clicking
+that "x" icon in the top left
+
+55
+00:02:15,940 --> 00:02:17,840
+or simply by using
+our keyboard shortcut.
+
+56
+00:02:20,600 --> 00:02:22,060
+So here in our calendar application,
+
+57
+00:02:22,120 --> 00:02:25,160
+we wanna make some changes to
+the HTML structure of it.
+
+58
+00:02:25,620 --> 00:02:29,300
+Now, we could go back onto our server
+and make the changes there,
+
+59
+00:02:29,360 --> 00:02:30,920
+and then refresh our
+browser,
+
+60
+00:02:31,120 --> 00:02:34,400
+but maybe we just wanna play around
+and live edit the page.
+
+61
+00:02:34,780 --> 00:02:38,080
+To do that, we wanna make sure
+we're in the Elements panel you see here.
+
+62
+00:02:38,460 --> 00:02:41,760
+In this panel, you can see
+a bunch of HTML on the left-side,
+
+63
+00:02:41,800 --> 00:02:44,100
+and a bunch of CSS on the right.
+
+64
+00:02:44,440 --> 00:02:46,120
+But what you're really seeing
+there on the left side
+
+65
+00:02:46,160 --> 00:02:49,780
+is a representation of the DOM,
+or Document Object Model.
+
+66
+00:02:50,120 --> 00:02:52,820
+You can think of it as a collection of
+ the different elements
+
+67
+00:02:52,860 --> 00:02:56,040
+in your HTML put into
+sort of a tree format.
+
+68
+00:02:56,240 --> 00:02:57,720
+So, if you want, you can press
+
+69
+00:02:57,780 --> 00:02:59,500
+on those ittle triangle shapes
+and it will show you
+
+70
+00:02:59,540 --> 00:03:02,560
+more or less code
+in that document tree.
+
+71
+00:03:03,000 --> 00:03:05,000
+If you're looking at
+your rendered HTML page
+
+72
+00:03:05,060 --> 00:03:06,340
+and you're
+wondering, well,
+
+73
+00:03:06,380 --> 00:03:08,700
+what element created
+that particular element,
+
+74
+00:03:08,760 --> 00:03:09,560
+what you can do is:
+
+75
+00:03:09,620 --> 00:03:13,100
+right-click on the element,
+(in our case, we're gonna click on the button)
+
+76
+00:03:13,280 --> 00:03:15,540
+and select "Inspect Element".
+
+77
+00:03:15,640 --> 00:03:18,420
+This will open the Elements panel,
+if we don't already have it opened,
+
+78
+00:03:18,480 --> 00:03:21,940
+and shows us that particular
+element highlighted inside the DOM.
+
+79
+00:03:22,080 --> 00:03:24,580
+You might also notice that
+ it's showing us the CSS
+
+80
+00:03:24,620 --> 00:03:26,320
+for that element on the right side,
+
+81
+00:03:26,360 --> 00:03:28,240
+but we'll get more
+into that on the next level.
+
+82
+00:03:28,620 --> 00:03:31,840
+Another way you can select an element
+is by clicking the magnifying glass
+
+83
+00:03:31,840 --> 00:03:35,300
+in the bottom-left of the screen
+to enter the Element Selection Mode.
+
+84
+00:03:35,580 --> 00:03:37,260
+Then, when you hover
+over the page,
+
+85
+00:03:37,280 --> 00:03:39,280
+you can see the different
+element boundaries
+
+86
+00:03:39,280 --> 00:03:40,400
+and when you left-click on one,
+
+87
+00:03:40,400 --> 00:03:42,760
+it will select that element
+in the Elements panel.
+
+88
+00:03:43,400 --> 00:03:45,200
+Now, let's go ahead and
+make some live changes.
+
+89
+00:03:45,320 --> 00:03:48,120
+For example, let's change 
+the text on our button.
+
+90
+00:03:48,680 --> 00:03:50,740
+To change that text,
+all we have to do is
+
+91
+00:03:50,780 --> 00:03:51,540
+double-click
+on it,
+
+92
+00:03:52,340 --> 00:03:53,280
+type a new title,
+
+93
+00:03:53,400 --> 00:03:55,260
+and then we can just hit Enter
+when we're done
+
+94
+00:03:55,260 --> 00:03:56,920
+or click somewhere else on the page.
+
+95
+00:03:59,260 --> 00:04:01,260
+If we right-click on a particular element,
+
+96
+00:04:01,320 --> 00:04:02,960
+we're given a bunch
+of different options,
+
+97
+00:04:02,960 --> 00:04:05,360
+including the ability to
+add or edit attributes.
+
+98
+00:04:06,040 --> 00:04:08,860
+Let's go ahead and add an 
+ "id" attribute to this element.
+
+99
+00:04:09,680 --> 00:04:10,440
+Pretty easy.
+
+100
+00:04:11,940 --> 00:04:13,520
+Also in this menu,
+we can choose
+
+101
+00:04:13,520 --> 00:04:15,200
+to edit a node
+as HTML
+
+102
+00:04:15,320 --> 00:04:18,780
+where we can change any part of the 
+element or add additional elements.
+
+103
+00:04:23,540 --> 00:04:25,740
+Finally, if we click and
+drag an element,
+
+104
+00:04:25,740 --> 00:04:25,760
+we can change its
+location on the page.
+Finally, if we click and
+drag an element,
+
+105
+00:04:25,760 --> 00:04:27,920
+we can change its
+location on the page.
+
+106
+00:04:28,720 --> 00:04:29,940
+It shouldn't come
+as a surprise that
+
+107
+00:04:29,940 --> 00:04:32,940
+you can select any element
+and hit the delete button
+
+108
+00:04:32,940 --> 00:04:34,180
+to remove
+that element
+
+109
+00:04:34,360 --> 00:04:37,420
+or even right-click and select the
+"Delete" menu item.
+
+110
+00:04:38,020 --> 00:04:40,340
+Well, now it's time for you to practice
+
+111
+00:04:40,340 --> 00:04:42,480
+using some of these
+techniques and the challenges.
+
